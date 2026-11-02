@@ -51,3 +51,13 @@ La portada sigue la dirección visual de `docs/Landing Page.pdf`: hero centrado,
 7. Definir metadatos sociales (Open Graph), favicon, `sitemap.xml`, analítica/privacidad si se necesitan y validar accesibilidad, enlaces y contenido móvil antes de anunciar el sitio.
 
 Los enlaces a Google Fonts requieren conexión externa. Si se necesita operación sin terceros, alojar las fuentes localmente y actualizar `index.html`/`src/styles.css`. El directorio `dist/` es generado y no debe editarse manualmente.
+
+## Vista previa para el equipo en GitHub Pages
+
+El repositorio está preparado para publicar una vista previa en:
+
+`https://nicorf12.github.io/explor.ar-web/`
+
+Al hacer push a `main`, la acción `.github/workflows/deploy-pages.yml` compila y publica `dist/`. También se puede iniciar manualmente desde **Actions → Deploy GitHub Pages → Run workflow**. En el repositorio, configurar **Settings → Pages → Build and deployment → Source: GitHub Actions**. El flujo incluye fallback SPA para abrir directamente páginas como `/rovers` y sirve las imágenes bajo el prefijo del repositorio.
+
+La vista será pública mientras GitHub Pages esté habilitado para el repositorio. Para probarla, abrir la URL anterior después de que termine correctamente la acción de despliegue.
