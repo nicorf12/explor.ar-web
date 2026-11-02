@@ -40,14 +40,6 @@ La primera versión implementa Inicio, Proyecto, Rovers, detalle de Zonda RC y H
 
 La portada sigue la dirección visual de `docs/Landing Page.pdf`: hero centrado, alternancia de crema y azul noche, tarjetas coral, presentación del rover, patrocinio, equipo, eventos y avances. Los marcadores de imágenes son accesibles y cargan automáticamente el archivo configurado cuando se agrega a `public/images/`; no hace falta editar componentes. La lista completa de nombres para logos, fotos de eventos e integrantes y diseños de ambos rovers está en [public/images/README.md](public/images/README.md). Las fotografías usan recorte `cover`; los logos conservan su proporción.
 
-## Decisiones de contenido
-
-- `explor.ar.md` funciona como brief principal de identidad, audiencia y estructura.
-- `docs/RC_Proposal.md` es la fuente de contexto técnico de Zonda RC: arquitectura preliminar con tres subsistemas, módulo de tareas con Raspberry Pi 5, y alternativas de movilidad todavía en evaluación. El sitio las presenta como decisiones preliminares, no como especificaciones finales.
-- Zonda RC figura con inscripción aceptada a HERC 2027. Tango HP se muestra como línea de desarrollo distinta, sin atribuirle participación en HERC.
-- No se publican integrantes, patrocinadores, canales sociales específicos, importes ni compromisos de beneficios sin información confirmada.
-- Las consultas de patrocinio/contacto se envían por correo mediante enlaces `mailto`; no hay formulario ni backend en esta entrega.
-
 ## Preparación para producción
 
 1. Revisar el contenido con los equipos, en especial presupuesto, fechas, reglas HERC, estado real de ambos rovers y datos institucionales.
