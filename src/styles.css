@@ -246,15 +246,14 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 .project-academia:after{content:'';position:absolute;z-index:-1;right:-24px;top:20px;width:250px;height:190px;background:url('/images/lunar-orbits.svg') center/contain no-repeat;opacity:.16;pointer-events:none}
 .project-academia h2{font-size:clamp(38px,4.8vw,58px);margin:0 0 20px}
 .project-academia>p{max-width:none;width:100%;font-size:15px;line-height:1.85;color:#b9bac1}
-.academia-note{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;margin-top:28px;padding:23px 26px;border:1px solid #383744;background:#171821}
-.academia-note>span{font:600 11px var(--mono);letter-spacing:.14em;color:#ff8b76}
+.academia-note{display:block;margin-top:28px;padding:23px 26px;border-left:2px solid #f16a55;background:linear-gradient(90deg,#f16a5512,#171821 34%)}
 .academia-note p{color:#c1c0c8;font-size:13px;line-height:1.75;margin:0}
 @media(max-width:680px){
  .project-page .project-pillars .pillar-grid{grid-template-columns:1fr;gap:10px}
  .project-page .project-pillars .pillar-grid article{min-height:0;padding:18px}
  .project-academia{padding-block:58px}
  .project-academia:after{width:140px;height:110px;right:-22px;top:auto;bottom:5px;opacity:.09}
- .academia-note{grid-template-columns:1fr;gap:9px;padding:18px}
+ .academia-note{padding:18px}
 }
 
 /* Banner Proyecto: escena cálida en continuidad con la ilustración de portada. */
@@ -272,6 +271,8 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 .project-hero-content{position:relative;z-index:1;padding-top:82px;padding-bottom:92px}
 .project-kicker{display:inline-block;margin:0 0 22px;padding:9px 13px;border:1px solid #ffd0a64a;background:#19182f62;color:#f5c7a4;font:600 10px var(--mono);letter-spacing:.16em}
 .project-kicker span{color:#ff8068;padding-inline:5px}
+.project-kicker{position:relative;border-radius:2px;box-shadow:inset 0 0 0 4px #19182f32,0 7px 18px #08081445}
+.project-kicker:after{content:'✦';position:absolute;right:-11px;top:-13px;display:grid;place-items:center;width:23px;height:23px;border:1px solid #ffd0a677;border-radius:50%;background:#f16a55;color:#fff4e8;font:12px 'Manrope',sans-serif;transform:rotate(12deg)}
 .project-hero h1{max-width:800px;margin:0 0 23px;font-size:clamp(48px,6.3vw,82px);font-weight:700;line-height:1.04;letter-spacing:-.055em;color:#fff;white-space:normal}
 .project-hero h1 span{color:#ffac7f}
 .project-hero-content>p:not(.project-kicker){max-width:650px;margin:0;color:#eee2df;font-size:16px;line-height:1.8}
@@ -514,11 +515,11 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 .sponsor-page .content-section>.section-tag{margin-bottom:20px}
 .sponsor-page .tier-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .sponsor-page .tier-grid article{position:relative;overflow:hidden;min-height:150px;padding:22px;border:1px solid #45404a;background:linear-gradient(145deg,#24242e,#191a23);box-shadow:0 12px 28px #090a122e}
-.sponsor-page .tier-grid article:after{content:'';position:absolute;right:-28px;top:-38px;width:105px;height:105px;border:1px solid #edb7774a;border-radius:50%;box-shadow:0 0 0 13px #edb7770c,0 0 0 28px #edb77708}
-.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#51402e,#29232a 74%);border-color:#b98a58}
+.sponsor-page .tier-grid article:after{content:'';position:absolute;right:-28px;top:-38px;width:105px;height:105px;border:1px solid #ed765044;border-radius:50%;box-shadow:0 0 0 13px #ed765012,0 0 0 28px #ed765009}
+.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#63342f,#29232a 74%);border-color:#e45b45}
 .sponsor-page .tier-grid article:nth-child(2){background:linear-gradient(140deg,#383742,#25242f 74%);border-color:#817b83}
 .sponsor-page .tier-grid h3{position:relative;z-index:1;font:700 19px 'Manrope',sans-serif;margin:0 0 11px;color:#fff0dc}
-.sponsor-page .tier-grid p{position:relative;z-index:1;font:600 13px var(--mono);color:#efbd81}
+.sponsor-page .tier-grid p{position:relative;z-index:1;font:600 13px var(--mono);color:#ff9276}
 .sponsor-page .content-section>.disclaimer{max-width:none;margin-top:18px}
 .sponsor-page .sponsor-benefits{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(120deg,#252132,#171821);padding:72px 0;border-block:1px solid #403a48}
 .sponsor-page .sponsor-benefits:after{content:'';position:absolute;z-index:-1;right:0;top:-90px;width:310px;height:240px;background:url('/images/orbital-cluster.svg') center/contain no-repeat;opacity:.14;pointer-events:none}
@@ -630,10 +631,10 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 /* Rovers: paisaje lunar original para dar profundidad a hero y fondos */
 .rovers-listing{position:relative;isolation:isolate;overflow:hidden}
 .rovers-listing:after{content:'';position:absolute;z-index:-1;right:-4%;top:8px;width:min(58vw,720px);height:620px;background:url('/images/rovers-topography.svg') center/contain no-repeat;opacity:.2;pointer-events:none;mask-image:linear-gradient(180deg,#000 0%,#000 58%,transparent 100%)}
-.rovers-page .rovers-cycle:after{right:-5%;bottom:-165px;width:min(60vw,760px);height:400px;background-image:url('/images/rovers-lunar-scene.svg');background-position:right bottom;background-size:contain;opacity:.22;transform:scaleX(-1)}
+.rovers-page .rovers-cycle:after{right:0;bottom:0;width:100%;height:100%;background-image:url('/images/rovers-lunar-scene.svg');background-position:center 62%;background-size:cover;opacity:.2;transform:none;mask-image:linear-gradient(90deg,transparent 0%,#000 16%,#000 84%,transparent 100%)}
 @media(max-width:760px){
  .rovers-listing:after{right:-100px;top:65px;width:460px;height:430px;opacity:.12}
- .rovers-page .rovers-cycle:after{right:-120px;bottom:-80px;width:500px;height:260px;opacity:.14}
+ .rovers-page .rovers-cycle:after{right:0;bottom:0;width:100%;height:100%;background-position:62% center;background-size:cover;opacity:.13}
 }
 .team-page .team-portrait-grid .image-slot img{object-fit:cover;object-position:center 76%;padding:0}
 .brand-logo{display:block;width:auto;height:44px;max-width:156px;object-fit:contain}
@@ -754,7 +755,7 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 .project-page .project-mission:after{opacity:.22;right:0;width:350px;height:260px}
 .rovers-page-hero:after{right:0;top:0;width:min(45vw,560px);height:100%;opacity:.43}
 .rovers-page .rovers-listing:after{opacity:.27}
-.rovers-page .rovers-cycle:after{right:0;bottom:0;width:min(48vw,580px);height:100%;opacity:.27}
+.rovers-page .rovers-cycle:after{right:0;bottom:0;width:100%;height:100%;opacity:.2;mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent)}
 .zonda-hero:after,.hp-hero:after{right:0;top:0;width:min(40vw,470px);height:350px;opacity:.38}
 .vehicle-page .design-gallery:after{opacity:.24;width:320px;height:245px;right:0;bottom:-65px}
 .vehicle-page .vehicle-tech:after{opacity:.2;width:340px;height:255px;right:0;bottom:-60px}
@@ -778,7 +779,7 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
  .project-page .project-academia:after{opacity:.18;width:200px;height:155px;right:-20px}
  .project-page .project-mission:after{opacity:.17;width:250px;height:185px;right:-20px}
  .rovers-page-hero:after{right:0;top:auto;bottom:0;width:min(58vw,260px);height:180px;opacity:.27}
- .rovers-page .rovers-cycle:after{right:0;bottom:0;width:280px;height:195px;opacity:.2}
+ .rovers-page .rovers-cycle:after{right:0;bottom:0;width:100%;height:100%;background-position:62% center;background-size:cover;opacity:.13}
  .zonda-hero:after,.hp-hero:after{right:0;top:auto;bottom:0;width:230px;height:170px;opacity:.25}
  .vehicle-page .design-gallery:after{opacity:.18;width:200px;height:155px;right:-12px;bottom:-35px}
  .vehicle-page .vehicle-tech:after{opacity:.17;width:220px;height:165px;right:-12px;bottom:-30px}
@@ -834,3 +835,535 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 .image-slot.decorated-frame.card-art:after{left:0;width:100%;bottom:0;height:40%}
 .image-slot img.frame-overlay{inset:0;width:100%;height:100%;max-width:none;object-fit:fill;padding:0;z-index:3;opacity:.3;pointer-events:none}
 .team-page .team-portrait-grid .image-slot img.frame-overlay{inset:0;width:100%;height:100%;max-width:none;object-fit:fill;padding:0;z-index:3;opacity:.3;pointer-events:none}
+
+/* Navegación por rutas: al llegar a cada URL, se muestra el banner completo bajo la cabecera. */
+#page-banner{scroll-margin-top:0}
+/* Patrocinio con el naranja coral de ExplorAR, sin acentos dorados. */
+.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#63342f,#29232a 74%);border-color:#e45b45}
+.sponsor-page .tier-grid article:after{border-color:#ed765044;box-shadow:0 0 0 13px #ed765012,0 0 0 28px #ed765009}
+.sponsor-page .tier-grid h3{color:#fff0e9}
+.sponsor-page .tier-grid p{color:#ff9276}
+.sponsor-page .ways-grid article:before{background:#f16a55}
+
+/* Rótulos con el marco angular de las fotos, sticker integrado y sin placa piel. */
+.framed-kicker{position:relative;display:inline-flex;align-items:center;min-height:38px;padding:9px 25px 9px 14px;border:0;border-radius:0;background:linear-gradient(110deg,#17172de8,#252038b8);box-shadow:none;color:#f3e8e5;isolation:isolate}
+.framed-kicker:before{content:'';position:absolute;inset:0;z-index:-1;background:url('/images/photo-frame-overlay.svg') center/100% 100% no-repeat;pointer-events:none}
+.project-kicker.framed-kicker{color:#f3e8e5;border:0;background:linear-gradient(110deg,#17172de8,#252038b8);box-shadow:none}
+.project-kicker.framed-kicker:after{display:none}
+.framed-kicker>img{position:absolute;right:-22px;top:-25px;width:45px;height:49px;object-fit:contain;filter:drop-shadow(0 4px 4px #0008);transform:rotate(7deg);pointer-events:none}
+.rovers-kicker.framed-kicker{color:#f4e8e4}
+.rovers-kicker.framed-kicker>img{right:-24px;top:-22px;width:51px;height:43px;transform:rotate(-6deg)}
+@media(max-width:680px){.framed-kicker{min-height:34px;padding:8px 21px 8px 11px;font-size:8px}.framed-kicker>img{right:-18px;top:-20px;width:38px;height:42px}.rovers-kicker.framed-kicker>img{width:43px;height:38px}}
+
+/* Motivo planetario tenue para el ciclo de diseño de los rovers. */
+.rovers-page .rovers-cycle{position:relative;isolation:isolate;overflow:hidden;background:#191a2b}
+.rovers-page .rovers-cycle:after{content:'';position:absolute;z-index:0;right:2%;top:50%;width:min(52vw,640px);height:390px;transform:translateY(-50%);background:url('/images/orbital-cluster.svg') center/contain no-repeat;opacity:.2;pointer-events:none;mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent)}
+.rovers-page .rovers-cycle:before{content:'';position:absolute;z-index:0;left:3%;top:12%;width:min(26vw,290px);height:210px;background:url('/images/saturn-orbit.svg') center/contain no-repeat;opacity:.14;pointer-events:none}
+.rovers-page .rovers-cycle>.wrap{position:relative;z-index:1}
+@media(max-width:760px){.rovers-page .rovers-cycle:after{right:-70px;top:auto;bottom:-24px;width:340px;height:230px;transform:none;opacity:.15}.rovers-page .rovers-cycle:before{left:-90px;top:5%;width:220px;height:160px;opacity:.11}}
+
+/* Sistema cromático compartido: índigo profundo, paneles escalonados y coral. */
+:root{--bg:#11121a;--panel:#191a27;--line:#343342;--orange:#e85b45;--coral:#e85b45;--explorar-ink:#f4f2ef;--explorar-muted:#c2bfca;--explorar-coral:#ff8a72}
+body{background:var(--bg);color:var(--explorar-ink)}
+.topbar,.site-footer,.home-page~footer{background:#0d0e17}
+.nav-cta,.button-orange,.home-page .button-orange{background:#e85b45}
+.nav-cta:hover,.button-orange:hover,.home-page .button-orange:hover{background:#f06c55}
+.home-page{background:#11121a;color:#f4f2ef}
+.home-page .hero{background:linear-gradient(120deg,#191a2b,#252139 68%,#30233a);color:#f4f2ef}
+.home-page .hero h1 em,.home-page h2 em,.home-page .challenge-copy h2 em{color:#ff8a72}
+.home-page .hero-lede,.home-page .intro-heading p,.home-page .challenge-copy>p:not(.feature-kicker),.home-page .section-heading>div>p,.home-page .section-heading>p,.home-page .sponsor-home p,.home-page .team-home>div>p,.home-page .events-home .section-heading>p{color:#c2bfca}
+.home-page .intro-section,.home-page>.intro-section,.home-page .rovers-section,.home-page>.rovers-section,.home-page .team-home,.home-page>.team-home,.home-page .events-home,.home-page>.events-home{background:#151621;color:#f4f2ef;border-color:#343342}
+.home-page .challenge-section,.home-page>.challenge-section{background:#191a2b;color:#f4f2ef;border-color:#343342}
+.home-page .sponsor-home,.home-page>.sponsor-home,.home-page .support-strip,.home-page>.support-strip{background:#1b1b29;color:#f4f2ef;border-color:#343342}
+.home-page .value-cards article,.home-page .rover-card,.home-page .event-grid article{background:#1c1d2a;color:#f4f2ef;border-color:#383747}
+.home-page .value-cards article:nth-child(2){background:#242238;color:#f4f2ef}
+.home-page .value-cards p,.home-page .rover-card .card-info p,.home-page .event-grid p,.home-page .benefit-list span,.home-page .team-home>div>p{color:#c2bfca}
+.home-page .event-grid .image-slot{background:#252638;border-color:#393949}
+.home-page .disciplines span{background:#242432;color:#e5e2e8}
+.home-page .mission-note{background:#242238;color:#efedf2}
+.home-page .section-tag,.home-page .intro-section .section-tag{color:#b8b3c1}
+.home-page .challenge-copy .feature-kicker,.home-page .inline-link,.home-page .benefit-list span:before{color:#ff8a72}
+.home-page .rover-card .card-info h3,.home-page .event-grid h3{color:#f4f2ef}
+.home-page .sponsor-image,.home-page .team-image{background:#252638;border-color:#393949}
+.home-page .button-text{color:#f0edf2;border-color:#514a5b}
+.home-page .button-text:hover{border-color:#e85b45}
+.project-page,.rovers-page,.vehicle-page,.herc-page,.team-page,.sponsor-page,.contact-page{background:#11121a;color:#f4f2ef}
+/* Encabezados internos usan una misma familia cromática índigo/coral. */
+.project-hero,.rovers-page-hero,.zonda-hero,.hp-hero,.herc-page .page-intro,.team-page .page-intro,.sponsor-page .page-intro,.contact-page .page-intro{background-color:#191a2b;border-color:#383747}
+.herc-page .page-intro,.team-page .page-intro,.sponsor-page .page-intro,.contact-page .page-intro{background-image:radial-gradient(ellipse at 87% 42%,#e85b4524,transparent 36%),linear-gradient(120deg,#191a2b,#242238 70%,#302438)}
+.project-page .project-pillars,.rovers-page .rovers-cycle,.sponsor-page .sponsor-benefits{background-color:#191a2b;border-color:#383747}
+.project-page .project-academia,.project-page .project-facilities,.project-page .project-mission,.team-page .content-section,.vehicle-page .vehicle-tech,.vehicle-page .vehicle-decisions,.contact-page .contact-panel,.contact-page .contact-institution{background-color:#11121a;border-color:#343342}
+.project-page .project-pillars .pillar-grid article,.herc-page .timeline-item,.herc-page .check-list li,.team-page .team-portrait-grid article,.sponsor-page .ways-grid article,.sponsor-page .tier-grid article,.sponsor-page .sponsor-benefits .benefit-list li,.contact-page .contact-social>a{background:#1c1d2a;border-color:#393949}
+.project-page h2 em,.rovers-page h2 em,.vehicle-page h2 em,.herc-page h2 em,.team-page h2 em,.sponsor-page h2 em,.contact-page h2 em{color:#ff8a72}
+.project-page .section-tag,.rovers-page .section-tag,.vehicle-page .section-tag,.herc-page .section-tag,.team-page .section-tag,.sponsor-page .section-tag,.contact-page .section-tag,.project-page .eyebrow,.rovers-page .eyebrow,.vehicle-page .eyebrow,.herc-page .eyebrow,.team-page .eyebrow,.sponsor-page .eyebrow,.contact-page .eyebrow{color:#ff8a72}
+.vehicle-kicker,.rovers-kicker,.project-kicker{color:#f4c0ae;border-color:#e85b4555}
+/* Patrocinio: quitar los restos amarillos/dorados y usar el mismo coral del proyecto. */
+.sponsor-page{--sponsor-accent:#e85b45}
+.sponsor-page .page-intro .eyebrow,.sponsor-page .page-intro h1 em,.sponsor-page .sponsor-reasons .section-tag,.sponsor-page .content-section>.section-tag,.sponsor-page .sponsor-benefits .section-tag,.sponsor-page h2 em{color:#ff8a72}
+.sponsor-page .ways-grid article:before{background:#e85b45}
+.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#48252b,#1c1d2a 74%);border-color:#a94a43}
+.sponsor-page .tier-grid article:nth-child(2){border-color:#464252}
+.sponsor-page .tier-grid h3,.sponsor-page .tier-grid p{color:#f4b09f}
+.sponsor-page .tier-grid article:after{border-color:#e85b4544;box-shadow:0 0 0 13px #e85b4512,0 0 0 28px #e85b4509}
+.sponsor-page .ways-grid article,.sponsor-page .tier-grid article,.sponsor-page .sponsor-benefits .benefit-list li{border-color:#393949}
+.sponsor-page .sponsor-benefits .benefit-list li{background:#20202e}
+.sponsor-page .content-section .button{box-shadow:0 9px 24px #e85b4530}
+
+/* Ajuste visual: naranja más presente en el sitio y home nuevamente blanca. */
+:root{--orange:#f04b23;--coral:#f04b23;--explorar-coral:#f04b23}
+.nav-cta,.button-orange,.home-page .button-orange{background:#f04b23}
+.nav-cta:hover,.button-orange:hover,.home-page .button-orange:hover{background:#d93b19}
+.project-kicker span,.project-kicker.framed-kicker span,.rovers-kicker,.vehicle-kicker{color:#ff7654}
+.project-page .section-tag,.rovers-page .section-tag,.vehicle-page .section-tag,.herc-page .section-tag,.team-page .section-tag,.sponsor-page .section-tag,.contact-page .section-tag,.project-page .eyebrow,.rovers-page .eyebrow,.vehicle-page .eyebrow,.herc-page .eyebrow,.team-page .eyebrow,.sponsor-page .eyebrow,.contact-page .eyebrow{color:#ff7654}
+.project-page h2 em,.rovers-page h2 em,.vehicle-page h2 em,.herc-page h2 em,.team-page h2 em,.sponsor-page h2 em,.contact-page h2 em,.sponsor-page .page-intro h1 em{color:#ff7654}
+.sponsor-page .ways-grid article:before,.sponsor-page .tier-grid article:after{border-color:#f04b2355;background-color:#f04b23}
+.sponsor-page .tier-grid article:after{background:transparent;box-shadow:0 0 0 13px #f04b2315,0 0 0 28px #f04b230a}
+.sponsor-page .tier-grid h3,.sponsor-page .tier-grid p{color:#ff987e}
+.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#542a2b,#20202e 74%);border-color:#b84b36}
+
+.home-page,.home-page .hero,.home-page .intro-section,.home-page>.intro-section,.home-page .challenge-section,.home-page>.challenge-section,.home-page .rovers-section,.home-page>.rovers-section,.home-page .sponsor-home,.home-page>.sponsor-home,.home-page .team-home,.home-page>.team-home,.home-page .events-home,.home-page>.events-home,.home-page .support-strip,.home-page>.support-strip{background:#fff;color:#171821;border-color:#eee8e5}
+.home-page .hero{background:linear-gradient(120deg,#fff,#fff9f6 70%,#fff4ee)}
+.home-page .hero h1,.home-page h2,.home-page h3,.home-page .rover-card .card-info h3,.home-page .event-grid h3{color:#171821}
+.home-page .hero h1 em,.home-page h2 em,.home-page .challenge-copy h2 em{color:#f04b23}
+.home-page .hero-lede,.home-page .intro-heading p,.home-page .challenge-copy>p:not(.feature-kicker),.home-page .section-heading>div>p,.home-page .section-heading>p,.home-page .sponsor-home p,.home-page .team-home>div>p,.home-page .events-home .section-heading>p{color:#56545b}
+.home-page .section-tag,.home-page .intro-section .section-tag{color:#77727a}
+.home-page .challenge-copy .feature-kicker,.home-page .inline-link,.home-page .benefit-list span:before{color:#e84522}
+.home-page .value-cards article,.home-page .rover-card,.home-page .event-grid article{background:#fff;border-color:#eee5e0;color:#171821}
+.home-page .value-cards article:nth-child(2){background:#fff7f3;color:#171821}
+.home-page .value-cards p,.home-page .rover-card .card-info p,.home-page .event-grid p,.home-page .benefit-list span,.home-page .team-home>div>p{color:#5d5961}
+.home-page .mission-note{background:#fff4ef;color:#343039;border:1px solid #f4dfd6}
+.home-page .disciplines span{background:#fff4ef;color:#343039;border:1px solid #f1dfd8}
+.home-page .event-grid .image-slot{background:#f2eeec;border-color:#eee5e0}
+.home-page .challenge-visual,.home-page .sponsor-image,.home-page .team-image{background:#f3eeeb;border-color:#e9dfda}
+.home-page .button-text{color:#28242b;border-color:#f04b23}
+.home-page .hero .button-text{border-color:transparent}
+.home-page .support-inner h2,.home-page .support-inner p{color:#171821}
+.home-page .value-cards article:nth-child(2) p{color:#5d5961}
+.home-page .hero .eyebrow{color:#78717a}
+
+/* Home: alternancia deliberada de blanco, índigo y naranja; el banner recupera Marte. */
+.home-page .hero{position:relative;isolation:isolate;overflow:hidden;background-color:#191a2b;background-image:linear-gradient(90deg,#191a2bf5 0%,#191a2be8 34%,#191a2b74 67%,#191a2b25 100%),url('/images/hero-mars.svg');background-position:center,center;background-size:cover;color:#fff}
+.home-page .hero h1,.home-page .hero h1 em{color:#fff}
+.home-page .hero h1 em{color:#ff7654}
+.home-page .hero-lede{color:#e0dce3}
+.home-page .hero .button-text{color:#fff;border-color:#ffffff50}
+.home-page .hero .button-text:hover{border-color:#f04b23}
+.home-page .intro-section,.home-page>.intro-section{background:#fff;color:#191a22;border-block:1px solid #ece8e6}
+.home-page .intro-heading h2,.home-page .intro-heading p{color:#191a22}
+.home-page .value-cards article{background:#fff;border:1px solid #e9e5e3}
+.home-page .value-cards article:nth-child(2){background:#fff;border-top:3px solid #f04b23}
+.home-page .value-cards article>span,.home-page .value-cards h3{color:#e84522}
+.home-page .value-cards p{color:#55535a}
+.home-page .mission-note{background:#f04b23;color:white;border:0}
+.home-page .challenge-section,.home-page>.challenge-section{background:#191a2b;color:#fff;border-block:1px solid #383747}
+.home-page .challenge-copy h2,.home-page .challenge-copy h2 em{color:#fff}
+.home-page .challenge-copy h2 em{color:#ff7654}
+.home-page .challenge-copy>p:not(.feature-kicker){color:#d0ccd5}
+.home-page .challenge-copy .feature-kicker,.home-page .challenge-copy .inline-link{color:#ff7654}
+.home-page .rover-systems article{border-color:#454052}
+.home-page .rover-systems article>span{color:#ff7654}
+.home-page .rovers-section,.home-page>.rovers-section{background:#fff;color:#191a22;border-bottom:1px solid #ece8e6}
+.home-page .rovers-section .section-tag,.home-page .rovers-section .section-heading h2,.home-page .rovers-section .section-heading p{color:#28242c}
+.home-page .rover-card{background:#fff;border-color:#e8e2df}
+.home-page .rover-card .card-info h3{color:#191a22}
+.home-page .rover-card .card-info p{color:#5d5961}
+.home-page .sponsor-home,.home-page>.sponsor-home{background:#e94b2e;color:#fff;border-block:0}
+.home-page .sponsor-home .section-tag,.home-page .sponsor-home h2,.home-page .sponsor-home h2 em,.home-page .sponsor-home p,.home-page .sponsor-home .benefit-list span{color:#fff}
+.home-page .sponsor-home .benefit-list span:before{color:#35191a}
+.home-page .sponsor-home .sponsor-image{border:1px solid #ffffff65;background:#ad382b}
+.home-page .sponsor-home .button-orange{background:#191a2b;color:#fff}
+.home-page .sponsor-home .button-orange:hover{background:#29243a}
+.home-page .team-home,.home-page>.team-home{background:#fff;color:#191a22;border-bottom:1px solid #ece8e6}
+.home-page .team-home .section-tag,.home-page .team-home h2,.home-page .team-home>div>p{color:#28242c}
+.home-page .team-home h2 em{color:#e84522}
+.home-page .team-home .disciplines span{background:#fff;border:1px solid #f04b2355;color:#302a30}
+.home-page .events-home,.home-page>.events-home{background:#191a2b;color:#fff;border-top:0}
+.home-page .events-home .section-tag,.home-page .events-home h2,.home-page .events-home h2 em{color:#fff}
+.home-page .events-home h2 em{color:#ff7654}
+.home-page .events-home .section-heading>p,.home-page .event-grid p{color:#d0ccd5}
+.home-page .event-grid article{background:#222333;border-color:#3c3b4d}
+.home-page .event-grid h3{color:#fff}
+.home-page .support-strip,.home-page>.support-strip{background:#f04b23;color:#fff;border:0}
+.home-page .support-inner .eyebrow,.home-page .support-inner h2,.home-page .support-inner h2 em,.home-page .support-inner p{color:#fff}
+.home-page .support-inner .button-orange{background:#191a2b;color:#fff}
+.home-page .support-inner .button-orange:hover{background:#29243a}
+.home-page .sponsor-home:after,.home-page .support-strip:after{opacity:.18;filter:brightness(0) invert(1)}
+@media(max-width:680px){.home-page .hero{background-image:linear-gradient(180deg,#191a2bf4 0%,#191a2be8 48%,#191a2b90 100%),url('/images/hero-mars.svg');background-position:center,65% center}.home-page .sponsor-home{background:#e94b2e}}
+
+/* Más naranja y menos crema en las páginas internas. */
+:root{--orange:#f04b23;--coral:#f04b23;--explorar-coral:#ff7654}
+.project-hero,.rovers-page-hero,.vehicle-hero,.herc-page .page-intro,.team-page .page-intro,.sponsor-page .page-intro,.contact-page .page-intro{background-image:radial-gradient(ellipse at 86% 46%,#f04b2338,transparent 37%),linear-gradient(120deg,#191a2b,#252238 68%,#342338)}
+.project-hero h1 span,.rovers-page-hero h1 span,.vehicle-hero h2,.project-page .section-tag,.rovers-page .section-tag,.vehicle-page .section-tag,.herc-page .section-tag,.team-page .section-tag,.sponsor-page .section-tag,.contact-page .section-tag{color:#ff7654}
+.project-page .project-pillars{background:linear-gradient(125deg,#a93625,#d4472b 52%,#a83227);border-color:#f27655}
+.project-page .project-pillars>.wrap>.section-tag{color:#ffe0d5}
+.project-page .project-pillars>.wrap>h2,.project-page .project-pillars h2 em{color:#fff}
+.project-page .project-pillars .pillar-grid article{background:#1c1d2a;border-color:#ffffff40;border-top:3px solid #ff7654}
+.project-page .project-pillars .pillar-grid article>span{color:#ff9a7d}
+.project-page .project-pillars .pillar-grid h3{color:#fff}
+.project-page .project-pillars .pillar-grid p{color:#ded9e0}
+.project-page .project-cta{padding:48px 34px;margin-block:22px;background:#f04b23;border:0;color:#fff}
+.project-page .project-cta .eyebrow,.project-page .project-cta h2,.project-page .project-cta h2 em{color:#fff}
+.project-page .project-cta .button{background:#191a2b}
+.project-page .project-cta .button:hover{background:#29243a}
+.project-page .project-facilities .facility-grid article{border-top:3px solid #f04b23}
+.project-page .academia-note{border-left:4px solid #f04b23;background:linear-gradient(90deg,#f04b2326,#191a27 46%)}
+
+.rovers-page .rovers-listing{background:#f5f0ed;color:#191a22}
+.rovers-page .rovers-intro-heading h2{color:#191a22}
+.rovers-page .rovers-intro-heading>p{color:#55515a}
+.rovers-page .rover-card{border-color:#f04b2377;box-shadow:0 14px 35px #100c181c}
+.rovers-page .rover-card .card-info{background:#fffaf7}
+.rovers-page .rover-card .card-info h3{color:#191a22}
+.rovers-page .rover-card .card-info p{color:#57535b}
+.rovers-page .rover-card .section-tag{color:#dc401f}
+.rovers-page .rovers-cycle{background:linear-gradient(120deg,#b83925,#e64c2d 55%,#b4382c);border-color:#f27554}
+.rovers-page .rovers-cycle .rovers-intro-heading h2,.rovers-page .rovers-cycle .rovers-intro-heading h2 em{color:#fff}
+.rovers-page .rovers-cycle .rovers-intro-heading>p{color:#ffdfd4}
+.rovers-cycle-steps article{background:#201e2b;border-top:3px solid #ff7958;box-shadow:0 10px 28px #431c1d35}
+.rovers-cycle-steps span{color:#ff9b7c}
+.rovers-cycle-steps p{color:#eee8ed}
+.rovers-page .rovers-cycle:after{opacity:.16;filter:saturate(.7)}
+.rovers-page .rovers-cycle:before{opacity:.1;filter:saturate(.7)}
+.rovers-page .rovers-cta{border-top-color:#f04b23}
+
+.vehicle-page .vehicle-status{border-color:#f04b2370;background:#f04b2318;color:#ffd0c1}
+.vehicle-page .vehicle-tech .tech-list li{border:1px solid #484052;border-top:3px solid #f04b23;background:#1c1d2a}
+.hp-page .vehicle-tech .tech-list li,.hp-brake-options article{border-top-color:#f04b23}
+.hp-brake-options article>span,.vehicle-page .vehicle-tech h2 em,.vehicle-page .vehicle-decisions h2 em,.vehicle-page .design-gallery h2 em{color:#ff7654}
+.vehicle-page .vehicle-decisions,.vehicle-page .hp-propulsion{border-bottom-color:#3c3847}
+.vehicle-page .design-gallery .image-slot{border-color:#f04b2355}
+
+.herc-page .herc-facts{background:linear-gradient(115deg,#b83925,#e64c2d 58%,#b4382c);border-color:#f27554}
+.herc-page .fact-grid>div,.herc-page .fact-grid>div:first-child{background:#201e2b;border-color:#ffffff55;border-top:3px solid #ff7958}
+.herc-page .fact-grid span{color:#ff9b7c}
+.herc-page .content-section{border-top:3px solid #f04b23}
+.herc-page .timeline-item.current{border-top-color:#f04b23;background:#28202b}
+.herc-page .check-list li{border-left:3px solid #f04b23}
+.herc-page .cta-section{background:#f04b23;color:white;padding:38px 32px;margin-block:24px;border:0}
+.herc-page .cta-section .eyebrow,.herc-page .cta-section h2,.herc-page .cta-section h2 em{color:#fff}
+.herc-page .cta-section .button{background:#191a2b}
+
+.team-page .content-section:not(.team-portraits){border-top:3px solid #f04b23}
+.team-page .team-portraits{background:#f5f0ed;color:#191a22;border-top:3px solid #f04b23}
+.team-page .team-portraits>.section-tag{color:#d94221}
+.team-page .team-portrait-grid article{border:1px solid #f04b2366;border-top:3px solid #f04b23;background:#fffaf7}
+.team-page .team-portrait-grid h3{color:#191a22}
+.team-page .team-portrait-grid p{color:#57535b}
+
+.sponsor-page .sponsor-reasons{background:linear-gradient(125deg,#191a2b,#242036 58%,#382438);border-bottom:3px solid #f04b23}
+.sponsor-page .sponsor-reasons .ways-grid article{border-left:3px solid #f04b23}
+.sponsor-page .tier-grid article{border-top:3px solid #f04b23}
+.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#542a2b,#20202e 74%);border-color:#f04b23}
+.sponsor-page .sponsor-benefits{background:linear-gradient(120deg,#b83925,#e64c2d 58%,#a83227);border-block:0}
+.sponsor-page .sponsor-benefits h2,.sponsor-page .sponsor-benefits h2 em,.sponsor-page .sponsor-benefits .section-tag{color:#fff}
+.sponsor-page .sponsor-benefits .benefit-list li{border-color:#ffffff50;border-top:3px solid #ff8b6a;background:#211e2b}
+.sponsor-page .content-section>.section-tag{color:#f04b23}
+.sponsor-page .content-section .button{background:#f04b23}
+
+@media(max-width:760px){
+ .project-page .project-cta,.herc-page .cta-section{padding:28px 20px}
+ .rovers-page .rovers-listing{background:#f5f0ed}
+ .herc-page .herc-facts{padding-block:22px}
+}
+
+/* Proyecto: fondo claro para la sección de disciplinas. */
+.project-page .project-pillars{background:#fff;color:#191a22;border-block:1px solid #eee8e5}
+.project-page .project-pillars>.wrap>.section-tag{color:#e84522}
+.project-page .project-pillars>.wrap>h2,.project-page .project-pillars>.wrap>h2 em{color:#191a22}
+.project-page .project-pillars .pillar-grid article{background:#fff;border:1px solid #f04b2355;border-top:3px solid #f04b23;box-shadow:0 10px 28px #29110c0d}
+.project-page .project-pillars .pillar-grid article>span{color:#df431f}
+.project-page .project-pillars .pillar-grid h3{color:#191a22}
+.project-page .project-pillars .pillar-grid p{color:#5c5860}
+.project-page .project-pillars:after{opacity:.1}
+
+/* Rovers: recuperar los fondos oscuros originales y cambiar los acentos crema por naranja. */
+.rovers-page{background:#11121a;color:#f4f2ef}
+.rovers-page .rovers-page-hero{background:radial-gradient(ellipse at 90% 36%,#e9634a32,transparent 34%),linear-gradient(120deg,#17182b,#252139 70%,#3c2c40);border-bottom:1px solid #484052}
+.rovers-page .rovers-listing{background:transparent;color:#f4f2ef}
+.rovers-page .rovers-intro-heading h2{color:#f4f2ef}
+.rovers-page .rovers-intro-heading>p{color:#ff9878}
+.rovers-page .rover-card{border-color:#f04b2377;background:#191a24;box-shadow:0 16px 45px #090a124d}
+.rovers-page .rover-card .card-info{background:#191a24}
+.rovers-page .rover-card .card-info h3{color:#f4f2ef}
+.rovers-page .rover-card .card-info p{color:#c2c0c7}
+.rovers-page .rover-card .section-tag{color:#ff7654}
+.rovers-page .rovers-cycle{background:#191a2b;border-color:#f04b2355}
+.rovers-page .rovers-cycle .rovers-intro-heading h2,.rovers-page .rovers-cycle .rovers-intro-heading h2 em{color:#fff}
+.rovers-page .rovers-cycle .rovers-intro-heading>p{color:#ffb29c}
+.rovers-page .rovers-cycle-steps article{background:linear-gradient(145deg,#222338,#1c1d2d);border-top:3px solid #f04b23;box-shadow:none}
+.rovers-page .rovers-cycle-steps span{color:#ff8b6d}
+.rovers-page .rovers-cycle-steps p{color:#ded9e2}
+.rovers-page .rovers-cycle:after{opacity:.2;filter:none}
+.rovers-page .rovers-cycle:before{opacity:.14;filter:none}
+.rovers-page .rovers-cta{background:transparent;border-top:1px solid #f04b2355}
+.rovers-page .rovers-cta h2 em{color:#ff7654}
+
+/* HERC: panel de datos claro con acentos naranjas. */
+.herc-page .herc-facts{background:#fff;border-block:1px solid #ece8e5}
+.herc-page .fact-grid>div,.herc-page .fact-grid>div:first-child{background:#fff;border:1px solid #f04b2355;border-top:3px solid #f04b23}
+.herc-page .fact-grid span{color:#df431f}
+.herc-page .fact-grid b{color:#191a22}
+.herc-page .fact-grid small{color:#68636b}
+
+/* Equipo: restaurar las superficies oscuras previas a la última pasada de color. */
+.team-page{background:#11121a;color:#f4f2ef}
+.team-page .page-intro{background-image:radial-gradient(ellipse at 90% 38%,#d97d5940,transparent 32%),linear-gradient(120deg,#1c1d31,#28243a 70%,#473442);border-bottom:1px solid #484050}
+.team-page .content-section:not(.team-portraits){background:transparent;border-top:0;border-color:#34333e}
+.team-page .team-portraits{background:transparent;color:#f4f2ef;border-top:1px solid #34333e}
+.team-page .team-portraits>.section-tag{color:#f0a181}
+.team-page .team-portrait-grid article{border:1px solid #383744;background:linear-gradient(145deg,#1c1d29,#171820);box-shadow:0 16px 38px #08091040}
+.team-page .team-portrait-grid h3{color:#f4f2ef}
+.team-page .team-portrait-grid p{color:#c1bec7}
+
+/* Patrocinio: restaurar fondos oscuros y conservar el coral solo como acento. */
+.sponsor-page{background:#11121a;color:#f4f2ef}
+.sponsor-page .page-intro{background-image:radial-gradient(ellipse at 87% 45%,#e85b4524,transparent 35%),linear-gradient(120deg,#191a2b,#242238 70%,#302438);border-bottom:1px solid #383747}
+.sponsor-page .sponsor-reasons{background:linear-gradient(135deg,#191a27,#20202d);border-bottom:1px solid #393642}
+.sponsor-page .sponsor-reasons .section-tag,.sponsor-page .content-section>.section-tag,.sponsor-page .sponsor-benefits .section-tag{color:#ff7654}
+.sponsor-page .ways-grid article{border:1px solid #3c3a45;border-left:3px solid #f04b23;background:linear-gradient(145deg,#252532,#1c1d27)}
+.sponsor-page .tier-grid article{border-top:1px solid #45404a;background:linear-gradient(145deg,#24242e,#191a23)}
+.sponsor-page .tier-grid article:nth-child(1){background:linear-gradient(140deg,#48252b,#20202e 74%);border:1px solid #b84b43}
+.sponsor-page .tier-grid article:nth-child(2){border-color:#464252}
+.sponsor-page .tier-grid h3{color:#f4eee9}
+.sponsor-page .tier-grid p{color:#ff987e}
+.sponsor-page .sponsor-benefits{background:linear-gradient(120deg,#252132,#171821);border-block:1px solid #403a48}
+.sponsor-page .sponsor-benefits h2,.sponsor-page .sponsor-benefits h2 em{color:#f4f2ef}
+.sponsor-page .sponsor-benefits .section-tag{color:#ff7654}
+.sponsor-page .sponsor-benefits .benefit-list li{border:1px solid #423c49;border-top:3px solid #f04b23;background:#201e2b}
+
+/* Paleta solicitada: naranja ExplorAR exacto; crema limitado a detalles claros existentes. */
+:root{--orange:#e63318;--coral:#e63318;--explorar-coral:#e63318}
+.nav-cta,.button-orange,.home-page .button-orange,.home-page .support-strip,.home-page>.support-strip{background-color:#e63318}
+.nav-cta:hover,.button-orange:hover,.home-page .button-orange:hover,.home-page .support-inner .button-orange:hover{background-color:#c92b16}
+.sponsor-page .ways-grid article:before,.sponsor-page .tier-grid article:after{background-color:#e63318}
+.project-page .project-cta,.herc-page .cta-section,.home-page .sponsor-home,.home-page>.sponsor-home{background:#e63318}
+.project-page .project-facilities .facility-grid article,.project-page .project-pillars .pillar-grid article,.rovers-page .rovers-cycle-steps article,.herc-page .fact-grid>div,.herc-page .fact-grid>div:first-child,.team-page .team-portrait-grid article,.sponsor-page .ways-grid article,.sponsor-page .tier-grid article{border-top-color:#e63318}
+.project-page .project-pillars .pillar-grid article>span,.rovers-page .rovers-kicker,.rovers-page .rovers-intro-heading h2 em,.rovers-page .rover-card .section-tag,.rovers-page .rovers-cycle-steps span,.vehicle-page .vehicle-hero h2,.vehicle-page .section-tag,.herc-page .section-tag,.team-page .section-tag,.sponsor-page .section-tag,.contact-page .section-tag{color:#e63318}
+.project-page .academia-note,.herc-page .check-list li,.team-page .team-portrait-grid article,.sponsor-page .ways-grid article,.sponsor-page .benefit-list li{border-left-color:#e63318}
+.project-page .project-cta .eyebrow,.project-page .project-cta h2,.project-page .project-cta h2 em,.herc-page .cta-section .eyebrow,.herc-page .cta-section h2,.herc-page .cta-section h2 em,.home-page .sponsor-home h2,.home-page .sponsor-home h2 em,.home-page .sponsor-home p,.home-page .sponsor-home .benefit-list span{color:#fff}
+
+/* Tipografía interna: naranja en títulos y encabezados; crema reservado a detalles y lectura. */
+.project-page h1,.project-page h2,.project-page h3,
+.rovers-page h1,.rovers-page h2,.rovers-page h3,
+.vehicle-page h1,.vehicle-page h2,.vehicle-page h3,
+.herc-page h1,.herc-page h2,.herc-page h3,
+.team-page h1,.team-page h2,.team-page h3,
+.sponsor-page h1,.sponsor-page h2,.sponsor-page h3,
+.contact-page h1,.contact-page h2,.contact-page h3{color:#e63318}
+.project-page h1 em,.project-page h2 em,.project-page h3 em,
+.rovers-page h1 em,.rovers-page h2 em,.rovers-page h3 em,
+.vehicle-page h1 em,.vehicle-page h2 em,.vehicle-page h3 em,
+.herc-page h1 em,.herc-page h2 em,.herc-page h3 em,
+.team-page h1 em,.team-page h2 em,.team-page h3 em,
+.sponsor-page h1 em,.sponsor-page h2 em,.sponsor-page h3 em,
+.contact-page h1 em,.contact-page h2 em,.contact-page h3 em{color:#e63318}
+.herc-page .fact-grid b,.herc-page .timeline-item b,.team-page .team-portrait-grid h3,.rovers-page .rover-card .card-info h3,.vehicle-page .vehicle-status{color:#e63318}
+/* Sobre paneles naranjas, el blanco mantiene el contraste del encabezado. */
+.project-page .project-cta h1,.project-page .project-cta h2,.project-page .project-cta h3,
+.project-page .project-cta h1 em,.project-page .project-cta h2 em,.project-page .project-cta h3 em,
+.rovers-page .rovers-cycle h1,.rovers-page .rovers-cycle h2,.rovers-page .rovers-cycle h3,
+.rovers-page .rovers-cycle h1 em,.rovers-page .rovers-cycle h2 em,.rovers-page .rovers-cycle h3 em,
+.herc-page .cta-section h1,.herc-page .cta-section h2,.herc-page .cta-section h3,
+.herc-page .cta-section h1 em,.herc-page .cta-section h2 em,.herc-page .cta-section h3 em,
+.sponsor-page .sponsor-benefits h1,.sponsor-page .sponsor-benefits h2,.sponsor-page .sponsor-benefits h3,
+.sponsor-page .sponsor-benefits h1 em,.sponsor-page .sponsor-benefits h2 em,.sponsor-page .sponsor-benefits h3 em{color:#fff}
+
+/* Base tipográfica crema/blanca; el naranja queda como acento puntual. */
+.project-page h1,.project-page h2,.project-page h3,
+.rovers-page h1,.rovers-page h2,.rovers-page h3,
+.vehicle-page h1,.vehicle-page h2,.vehicle-page h3,
+.herc-page h1,.herc-page h2,.herc-page h3,
+.team-page h1,.team-page h2,.team-page h3,
+.sponsor-page h1,.sponsor-page h2,.sponsor-page h3,
+.contact-page h1,.contact-page h2,.contact-page h3{color:#f4f2ef}
+.project-page h1 em,.project-page h2 em,.project-page h3 em,
+.rovers-page h1 em,.rovers-page h2 em,.rovers-page h3 em,
+.vehicle-page h1 em,.vehicle-page h2 em,.vehicle-page h3 em,
+.herc-page h1 em,.herc-page h2 em,.herc-page h3 em,
+.team-page h1 em,.team-page h2 em,.team-page h3 em,
+.sponsor-page h1 em,.sponsor-page h2 em,.sponsor-page h3 em,
+.contact-page h1 em,.contact-page h2 em,.contact-page h3 em{color:#e63318}
+.project-page .project-pillars>.wrap>h2,.project-page .project-pillars .pillar-grid h3,
+.rovers-page .rovers-listing .rovers-intro-heading h2,.rovers-page .rovers-listing .rover-card .card-info h3,
+.herc-page .herc-facts .fact-grid b,.team-page .team-portraits .team-portrait-grid h3{color:#24212a}
+.project-page .project-pillars>.wrap>h2 em,.rovers-page .rovers-listing .rovers-intro-heading h2 em{color:#e63318}
+.herc-page .fact-grid span,.herc-page .timeline-item.current span,.rovers-page .rover-card .section-tag,.team-page .team-portraits>.section-tag{color:#e63318}
+.project-page .project-cta h1,.project-page .project-cta h2,.project-page .project-cta h3,
+.project-page .project-cta h1 em,.project-page .project-cta h2 em,.project-page .project-cta h3 em,
+.rovers-page .rovers-cycle h1,.rovers-page .rovers-cycle h2,.rovers-page .rovers-cycle h3,
+.rovers-page .rovers-cycle h1 em,.rovers-page .rovers-cycle h2 em,.rovers-page .rovers-cycle h3 em,
+.herc-page .cta-section h1,.herc-page .cta-section h2,.herc-page .cta-section h3,
+.herc-page .cta-section h1 em,.herc-page .cta-section h2 em,.herc-page .cta-section h3 em,
+.sponsor-page .sponsor-benefits h1,.sponsor-page .sponsor-benefits h2,.sponsor-page .sponsor-benefits h3,
+.sponsor-page .sponsor-benefits h1 em,.sponsor-page .sponsor-benefits h2 em,.sponsor-page .sponsor-benefits h3 em{color:#fff}
+
+/* Rovers: paleta unificada y contraste consistente entre hero, tarjetas y proceso. */
+.rovers-page{background:#11121a;color:#f4f2ef}
+.rovers-page .rovers-page-hero{background:radial-gradient(ellipse at 86% 42%,#e6331828,transparent 36%),linear-gradient(120deg,#191a2b,#232238 70%,#2b2236);border-bottom:1px solid #383747}
+.rovers-page .rovers-page-hero h1,.rovers-page .rovers-page-hero h1 span{color:#f4f2ef}
+.rovers-page .rovers-page-hero h1 span{color:#e63318}
+.rovers-page .rovers-kicker{color:#ff7654;border-color:#e6331855;background:#191a2b}
+.rovers-page .rovers-listing{background:#11121a;color:#f4f2ef}
+.rovers-page .rovers-listing:after{opacity:.12}
+.rovers-page .rovers-intro-heading h2,.rovers-page .rovers-listing .rovers-intro-heading h2{color:#f4f2ef}
+.rovers-page .rovers-intro-heading h2 em,.rovers-page .rovers-listing .rovers-intro-heading h2 em{color:#e63318}
+.rovers-page .rovers-intro-heading>p{color:#c2bfca}
+.rovers-page .rover-card{background:#1c1d2a;border:1px solid #3b3947;box-shadow:0 14px 36px #08091040}
+.rovers-page .rover-card .card-art{background-color:#242438}
+.rovers-page .rover-card .card-info{background:#1c1d2a}
+.rovers-page .rover-card .card-info h3,.rovers-page .rovers-listing .rover-card .card-info h3{color:#f4f2ef}
+.rovers-page .rover-card .card-info p{color:#c2bfca}
+.rovers-page .rover-card .section-tag{color:#e63318}
+.rovers-page .rover-card:after{border-color:#e6331840;box-shadow:0 0 0 20px #e6331810,0 0 0 42px #e6331808}
+.rovers-page .rovers-cycle{background:#191a2b;border-block:1px solid #383747}
+.rovers-page .rovers-cycle .rovers-intro-heading h2,.rovers-page .rovers-cycle .rovers-intro-heading h2 em{color:#f4f2ef}
+.rovers-page .rovers-cycle .rovers-intro-heading h2 em{color:#e63318}
+.rovers-page .rovers-cycle .rovers-intro-heading>p{color:#c2bfca}
+.rovers-page .rovers-cycle-steps article{background:#222333;border:1px solid #3b3947;border-top:2px solid #e63318;box-shadow:none}
+.rovers-page .rovers-cycle-steps span{color:#ff7654}
+.rovers-page .rovers-cycle-steps p{color:#d2ced7}
+.rovers-page .rovers-cycle:after{opacity:.14}
+.rovers-page .rovers-cycle:before{opacity:.1}
+.rovers-page .rovers-cta{background:#11121a;border-top:1px solid #383747}
+.rovers-page .rovers-cta h2,.rovers-page .rovers-cta h2 em{color:#f4f2ef}
+.rovers-page .rovers-cta h2 em{color:#e63318}
+.rovers-page .rovers-cta .eyebrow{color:#e63318}
+
+.rovers-page .rovers-page-hero .rovers-kicker{color:#fff}
+
+/* Banners: primera línea blanca y segunda línea naranja, como en Rovers. */
+.page-intro h1>span{display:block;color:#f4f2ef}
+.page-intro h1>.banner-title-accent{color:#e63318}
+.project-hero h1{color:#f4f2ef}
+.project-hero h1 span{color:#e63318}
+.rovers-page-hero h1{color:#f4f2ef}
+.rovers-page-hero h1 span{color:#e63318}
+.vehicle-hero h1{color:#f4f2ef}
+.vehicle-hero h2{color:#e63318}
+
+/* Home banner: nombre y presentación en blanco, propósito en naranja. */
+.home-page .hero h1>span:first-child em,.home-page .hero h1>span:nth-child(2){color:#f4f2ef}
+.home-page .hero h1>span:nth-child(3),.home-page .hero h1>span:nth-child(3) em{color:#e63318}
+
+.team-page .page-intro .eyebrow,.herc-page .page-intro .eyebrow{color:#e63318}
+.team-page .page-intro .eyebrow .pulse,.herc-page .page-intro .eyebrow .pulse{background:#e63318;box-shadow:0 0 12px #e6331880}
+
+.team-page .page-intro .eyebrow,.herc-page .page-intro .eyebrow{color:#fff}
+.team-page .page-intro .eyebrow .pulse,.herc-page .page-intro .eyebrow .pulse{background:#fff;box-shadow:0 0 10px #ffffff70}
+
+.sponsor-page .page-intro .eyebrow{color:#fff}
+.sponsor-page .page-intro .eyebrow .pulse{background:#fff;box-shadow:0 0 10px #ffffff70}
+
+/* Equipo: banner y contenido alineados con la paleta índigo, blanco y naranja de Rovers. */
+.team-page{background:#11121a;color:#f4f2ef}
+.team-page .page-intro{background-image:radial-gradient(ellipse at 86% 42%,#e6331828,transparent 36%),linear-gradient(120deg,#191a2b,#232238 70%,#2b2236);border-bottom:1px solid #383747}
+.team-page .page-intro .eyebrow{color:#fff}
+.team-page .page-intro .pulse{background:#fff;box-shadow:0 0 10px #ffffff70}
+.team-page .page-intro h1>span:first-child{color:#f4f2ef}
+.team-page .page-intro h1>.banner-title-accent{color:#e63318}
+.team-page .page-intro>p{color:#d2ced7}
+.team-page .content-section:not(.team-portraits){background:transparent;border-color:#343342}
+.team-page .content-section>.section-tag,.team-page .team-portraits>.section-tag{color:#e63318}
+.team-page .content-columns h2,.team-page .team-portraits h3{color:#f4f2ef}
+.team-page .content-columns h2 em{color:#e63318}
+.team-page .content-columns p{color:#c2bfca}
+.team-page .team-portraits{background:transparent;border-top:1px solid #343342}
+.team-page .team-portrait-grid article{background:#1c1d2a;border:1px solid #3b3947;border-top:2px solid #e63318;box-shadow:0 14px 36px #08091040}
+.team-page .team-portrait-grid h3{color:#f4f2ef}
+.team-page .team-portrait-grid p{color:#c2bfca}
+.team-page .team-portrait-grid .image-slot{background:linear-gradient(145deg,#252638,#1a1b27);border-color:#3b3947}
+
+/* Mayor contraste para los títulos de las fichas individuales de rover. */
+.zonda-page .vehicle-hero h1,.hp-page .vehicle-hero h1{color:#fff;text-shadow:0 2px 18px #09091080}
+.zonda-page .vehicle-hero h2,.hp-page .vehicle-hero h2{color:#e63318}
+.zonda-page .vehicle-kicker,.hp-page .vehicle-kicker{color:#fff;border-color:#e63318;background:#151624}
+
+/* En Equipo, resaltar los nombres bajo cada retrato. */
+.team-page .team-portrait-grid h3{color:#e63318}
+/* Deshacer el ajuste aplicado por error a las fichas individuales. */
+.zonda-page .vehicle-hero h1,.hp-page .vehicle-hero h1{color:#f4f2ef;text-shadow:none}
+.zonda-page .vehicle-hero h2{color:#ff9d7b}
+.hp-page .vehicle-hero h2{color:#efb28f}
+.zonda-page .vehicle-kicker{color:#ffc09b;border-color:#ffb29552;background:#19192c77}
+.hp-page .vehicle-kicker{color:#efb28f;border-color:#ffb29552;background:#19192c77}
+
+.team-page .team-portrait-grid .team-rover-name{color:#e63318!important;font-weight:800;text-shadow:0 0 14px #e6331826}
+
+.project-page .project-hero .button{background:#e63318;box-shadow:0 10px 32px #e6331840}
+.project-page .project-hero .button:hover{background:#c92b16}
+
+.team-page .content-section>.section-tag,.team-page .team-portraits>.section-tag{color:#f4f2ef}
+
+.team-page .content-section>.section-tag,.team-page .team-portraits>.section-tag{color:#f3e3d0}
+
+.team-page .content-section>.section-tag,.team-page .team-portraits>.section-tag{color:#fff4ef}
+
+/* Reutilizar el crema de la home solo en los rótulos de Equipo. */
+.team-page .content-section>.section-tag,.team-page .team-portraits>.section-tag{color:var(--cream)}
+
+/* Solo Equipo toma el crema de la home; la propia home no se modifica. */
+.team-page .content-section>.section-tag,.team-page .team-portraits>.section-tag{color:#fff4ef}
+
+/* Home / bloque destacado Zonda RC: jerarquía de color clara sobre fondo oscuro. */
+.home-page .challenge-section,.home-page>.challenge-section{background:#191a2b;color:#fff;border-block:1px solid #383747}
+.home-page .challenge-copy .feature-kicker{color:#fff4ef}
+.home-page .challenge-copy .feature-kicker span{color:#e63318}
+.home-page .challenge-copy h2,.home-page .challenge-copy h2 em{color:#fff4ef}
+.home-page .challenge-copy h2 em{color:#e63318}
+.home-page .challenge-copy>p:not(.feature-kicker){color:#e4dfe3}
+.home-page .rover-systems{border-color:#e6331866}
+.home-page .rover-systems article{border-color:#e6331844}
+.home-page .rover-systems article>span{color:#e63318}
+.home-page .rover-systems h3{color:#fff4ef}
+.home-page .rover-systems article p{color:#d0cbd2}
+.home-page .challenge-copy .inline-link{color:#e63318}
+.home-page .challenge-copy .inline-link:hover{color:#ff7654}
+
+/* HERC: una sola jerarquía de color, con contraste claro en cada superficie. */
+.herc-page{background:#11121a;color:#f4f2ef}
+.herc-page .page-intro{background-image:radial-gradient(ellipse at 86% 42%,#e6331828,transparent 36%),linear-gradient(120deg,#191a2b,#232238 70%,#2b2236);border-bottom:1px solid #383747}
+.herc-page .page-intro .eyebrow{color:#fff}
+.herc-page .page-intro .pulse{background:#fff;box-shadow:0 0 10px #ffffff70}
+.herc-page .page-intro h1>span:first-child{color:#f4f2ef}
+.herc-page .page-intro h1>.banner-title-accent{color:#e63318}
+.herc-page .page-intro>p{color:#e4dfe3}
+.herc-page .herc-facts{background:#fff;border-block:1px solid #ece8e5}
+.herc-page .fact-grid>div,.herc-page .fact-grid>div:first-child{background:#fff;border:1px solid #e8ddd7;border-top:3px solid #e63318}
+.herc-page .fact-grid span{color:#e63318}
+.herc-page .fact-grid b{color:#24212a}
+.herc-page .fact-grid small{color:#68636b}
+.herc-page .content-section{background:#11121a;border-color:#343342}
+.herc-page .content-section>.section-tag{color:#fff4ef}
+.herc-page .content-columns h2{color:#f4f2ef}
+.herc-page .content-columns h2 em{color:#e63318}
+.herc-page .content-columns>div>p{color:#d2ced7}
+.herc-page .timeline-item{background:#1c1d2a;border-top:2px solid #3b3947}
+.herc-page .timeline-item.current{background:#24202a;border-top-color:#e63318}
+.herc-page .timeline-item span{color:#e63318}
+.herc-page .timeline-item b{color:#f4f2ef}
+.herc-page .timeline-item small{color:#c2bfca}
+.herc-page .check-list li{background:#1c1d2a;border:1px solid #3b3947;border-left:3px solid #e63318;color:#e4dfe3}
+.herc-page .check-list li:before{color:#e63318}
+.herc-page .disclaimer{color:#c2bfca!important;border-left-color:#e63318}
+.herc-page .inline-link{color:#e63318}
+.herc-page .cta-section{background:#e63318;color:#fff;border:0;padding:38px 32px;margin-block:24px}
+.herc-page .cta-section .eyebrow,.herc-page .cta-section h2,.herc-page .cta-section h2 em{color:#fff}
+.herc-page .cta-section .button{background:#191a2b;color:#fff}
+.herc-page .cta-section .button:hover{background:#30243a}
+
+.sponsor-page .tier-grid article:after{display:none}
+
+/* Saturno: reforzar el gradiente radial para que se perciba como en Júpiter. */
+.planet-saturno{--planet-light:#ffe5a3;--planet-mid:#cf7e48;--planet-dark:#66313a}
+.planet-saturno .planet-band{fill:#ffe5b0;opacity:.42}
+.planet-saturno .planet-band.alt{fill:#7e3b3a;opacity:.4}
+.planet-saturno .planet-glint{fill:#fff4d8;opacity:.42}
+
+/* Igualar el gradiente y las bandas de Saturno a Júpiter; conservar sus anillos. */
+.planet-saturno{--planet-light:#f9d6a3;--planet-mid:#c78559;--planet-dark:#663d38}
+.planet-saturno .planet-band{fill:#ffe1aa;opacity:.37}
+.planet-saturno .planet-band.alt{fill:#613e36;opacity:.34}
+.planet-saturno .planet-glint{fill:#fff0cf;opacity:.3}
+
+/* Categorías de Patrocinio: tarjeta Saturno con el degradado de Júpiter. */
+.sponsor-page .tier-grid article:nth-child(2){background:linear-gradient(140deg,#48252b,#20202e 74%);border-color:#b84b43}
