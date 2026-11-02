@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="47.499962 64.627098 120 120"
+   version="1.1"
+   id="svg272"
+   sodipodi:docname="logo-explorar-w.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview274"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0544998"
+     inkscape:cx="313.8929"
+     inkscape:cy="525.36757"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs269">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4330"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#120f24;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+       id="rect1136"
+       width="120"
+       height="120"
+       x="47.499962"
+       y="64.627098"
+       inkscape:export-filename="explorar\logo-explorar-w.png"
+       inkscape:export-xdpi="211.66666"
+       inkscape:export-ydpi="211.66666" />
+    <circle
+       style="display:none;fill:none;fill-opacity:1;stroke:#c9c9c9;stroke-width:0.1;stroke-linecap:round;stroke-opacity:1"
+       id="path3487"
+       cx="118.67002"
+       cy="127.38709"
+       r="35" />
+    <path
+       id="path370"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:3.28127;stroke-linecap:square;stroke-miterlimit:5;paint-order:stroke markers fill"
+       d="m 107.37323,82.413975 a 42.213121,42.213121 0 0 0 -42.213118,42.213135 42.213121,42.213121 0 0 0 42.213118,42.21312 42.213121,42.213121 0 0 0 2.31478,-0.0866 44.377895,44.377895 0 0 1 -30.497645,-42.12653 44.377895,44.377895 0 0 1 30.549335,-42.144667 42.213121,42.213121 0 0 0 -2.36647,-0.06853 z" />
+    <path
+       id="path1934-6"
+       style="fill:#e63318;fill-opacity:1;stroke-width:3.25045;stroke-linecap:square;stroke-miterlimit:5;paint-order:stroke markers fill"
+       d="m 113.10936,82.822751 a 44.377895,44.377895 0 0 0 -8.42946,4.026572 37.88357,37.88357 0 0 1 2.69333,-0.105815 37.88357,37.88357 0 0 1 37.8836,37.883612 37.88357,37.88357 0 0 1 -37.8836,37.88338 37.88357,37.88357 0 0 1 -2.69333,-0.1058 44.377895,44.377895 0 0 0 8.42993,4.02657 42.213121,42.213121 0 0 0 36.47653,-41.80411 42.213121,42.213121 0 0 0 -36.477,-41.804371 z" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:7.37817;stroke-linecap:square;stroke-miterlimit:5;paint-order:stroke markers fill"
+       id="path2060"
+       inkscape:flatsided="false"
+       sodipodi:sides="4"
+       sodipodi:cx="84.096771"
+       sodipodi:cy="96.516129"
+       sodipodi:r1="52.014137"
+       sodipodi:r2="6.698554"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.3561945"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 84.096773,148.53027 79.360178,101.25272 32.082634,96.51613 79.360178,91.779536 84.09677,44.501991 88.833364,91.779536 136.11091,96.516127 88.833364,101.25272 Z"
+       inkscape:transform-center-x="-2.8199793e-06"
+       inkscape:transform-center-y="-2.2000692e-06"
+       transform="matrix(0.4329551,0,0,0.4329551,71.089836,82.839948)" />
+  </g>
+</svg>

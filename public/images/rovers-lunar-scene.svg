@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+ <defs>
+  <linearGradient id="ridge" x1="380" y1="290" x2="770" y2="540" gradientUnits="userSpaceOnUse"><stop stop-color="#98899D"/><stop offset="1" stop-color="#282A40"/></linearGradient>
+  <linearGradient id="ground" x1="447" y1="380" x2="663" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#B27C72"/><stop offset=".42" stop-color="#65566A"/><stop offset="1" stop-color="#25263A"/></linearGradient>
+  <linearGradient id="rover" x1="501" y1="387" x2="615" y2="455" gradientUnits="userSpaceOnUse"><stop stop-color="#F2D7AE"/><stop offset=".5" stop-color="#B5A98F"/><stop offset="1" stop-color="#59606B"/></linearGradient>
+  <radialGradient id="earth"><stop stop-color="#9DCAE5"/><stop offset=".72" stop-color="#5386BD"/><stop offset="1" stop-color="#283763"/></radialGradient>
+  <radialGradient id="halo"><stop stop-color="#EBA080" stop-opacity=".25"/><stop offset="1" stop-color="#EBA080" stop-opacity="0"/></radialGradient>
+ </defs>
+ <!-- Distant moon and quiet star field -->
+ <circle cx="698" cy="149" r="129" fill="url(#halo)"/>
+ <circle cx="698" cy="149" r="39" fill="url(#earth)" opacity=".91"/>
+ <path d="M672 118c12-12 34-16 49-5l-7 13-17 4-8 15-19-4-9-14 11-9zm34 37 19-4 9 11-7 14-19 6-9-11 7-16z" fill="#C1D9D9" opacity=".52"/>
+ <g fill="#FFF1D7"><circle cx="560" cy="91" r="2"/><circle cx="808" cy="237" r="1.5"/><circle cx="609" cy="247" r="1.4"/><circle cx="848" cy="106" r="1.2"/><circle cx="777" cy="310" r="1.5"/><circle cx="521" cy="181" r="1.2"/><circle cx="659" cy="53" r="1"/></g>
+ <path d="m582 159 8 2-8 2-2 8-2-8-8-2 8-2 2-8 2 8zM833 182l5 1-5 2-2 5-1-5-5-2 5-1 1-5 2 5z" fill="#F8C5A2" opacity=".8"/>
+ <!-- Layered distant ridges -->
+ <path d="M287 363 351 327l44 13 75-74 37 29 69-62 60 58 58-23 72 67 64-6 70 46 1 116H287V363z" fill="#34354C"/>
+ <path d="m390 337 80-71 37 29 69-62 60 58 58-23 72 67 64-6 50 33-5 63H354l36-88z" fill="url(#ridge)" opacity=".74"/>
+ <path d="m478 290 29 5 69-62 60 58 58-23 30 28-51-8-39 22-58-38-30 5-36 41-42-10-37 27-44-11 91-49z" fill="#CE9D87" opacity=".21"/>
+ <!-- Surface with cratered lunar terrain -->
+ <path d="M316 426c85-48 177-62 261-39 87 23 167 17 323-30v263H316V426z" fill="url(#ground)"/>
+ <path d="M321 429c95-50 171-57 251-36 75 20 165 16 326-32" stroke="#E4A28A" stroke-opacity=".38" stroke-width="2"/>
+ <ellipse cx="746" cy="511" rx="84" ry="24" fill="#252638" opacity=".36"/>
+ <ellipse cx="746" cy="503" rx="81" ry="20" stroke="#E2B2A0" stroke-opacity=".22" stroke-width="2"/>
+ <ellipse cx="746" cy="503" rx="55" ry="12" stroke="#E2B2A0" stroke-opacity=".14" stroke-width="2"/>
+ <ellipse cx="411" cy="536" rx="61" ry="17" fill="#28293A" opacity=".34"/>
+ <ellipse cx="411" cy="530" rx="57" ry="14" stroke="#E2B2A0" stroke-opacity=".2" stroke-width="2"/>
+ <path d="m345 482 21-11 14 4 17-15 11 5 18-8 13 9-12 12-27-2-14 12-20-2-20 7-13-11zm466 50 23-7 17 5 12-5 16 8-12 11-23 1-17 6-22-7-10-12 16 0z" fill="#D79A83" opacity=".28"/>
+ <!-- Original small rover silhouette as a landscape detail -->
+ <g stroke-linejoin="round" stroke-linecap="round">
+  <path d="m493 416 30-28 74 4 37 28-17 10-106-2-18-12z" fill="url(#rover)" stroke="#F4D9B3" stroke-opacity=".78" stroke-width="2"/>
+  <path d="m525 390 5-32 39-1 18 36" fill="#64717B" stroke="#D4D8C9" stroke-width="2"/>
+  <path d="m539 357 5-22m13 22 1-27" stroke="#E9DCC1" stroke-width="3"/>
+  <circle cx="544" cy="331" r="6" fill="#D99A78" stroke="#F5D5B2" stroke-width="2"/>
+  <path d="m520 412-20 18m-1-1 13-4m92-18 24 17m-14-3 20 0" stroke="#E0D5BC" stroke-width="3"/>
+  <ellipse cx="512" cy="433" rx="11" ry="16" fill="#161A24" stroke="#B5B4A5" stroke-width="3"/>
+  <ellipse cx="614" cy="432" rx="11" ry="16" fill="#161A24" stroke="#B5B4A5" stroke-width="3"/>
+  <path d="m498 432-5-8m4 18-6 5m131-18 6-8m-5 18 7 5" stroke="#DDD6C3" stroke-width="2"/>
+ </g>
+ <path d="m455 460 12-5 7 3 8-7 9 5-8 8-14-1-8 4-6-7zm207 36 10-5 7 4 11-2 8 6-13 5-13-3-9 1-5-6 4 0z" fill="#ECD0AE" opacity=".45"/>
+ <g fill="#EBC5A6" opacity=".72"><circle cx="377" cy="451" r="3"/><circle cx="682" cy="454" r="2"/><circle cx="840" cy="423" r="2.5"/><circle cx="460" cy="507" r="2"/></g>
+</svg>

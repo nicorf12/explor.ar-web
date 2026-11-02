@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#17192E"/><stop offset=".62" stop-color="#33344B"/><stop offset="1" stop-color="#B45D56"/></linearGradient>
+    <linearGradient id="ground" x1="1090" y1="430" x2="1130" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#CD7967"/><stop offset="1" stop-color="#542F39"/></linearGradient>
+    <linearGradient id="rover" x1="960" y1="400" x2="1330" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#E9D9B8"/><stop offset="1" stop-color="#8D948D"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 410 -580 0 1160 390)" gradientUnits="userSpaceOnUse"><stop stop-color="#F29B72" stop-opacity=".58"/><stop offset="1" stop-color="#E88369" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse"><path d="M46 0H0v46" stroke="#fff" stroke-opacity=".08"/></pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v760H0z"/><path fill="url(#glow)" d="M0 0h1600v760H0z"/><path fill="url(#grid)" d="M0 0h1600v760H0z" opacity=".5"/>
+  <circle cx="1245" cy="202" r="105" fill="#D99B84" fill-opacity=".1" stroke="#F4C7A9" stroke-opacity=".28"/>
+  <circle cx="1245" cy="202" r="82" fill="#E6AE91" fill-opacity=".12"/>
+  <path d="m1245 93 15 106-11 11 65 69-89-61-19 9 39-134Z" fill="#F3D2B5" fill-opacity=".16"/>
+  <g fill="#F4E6D3" opacity=".75"><circle cx="1002" cy="105" r="2"/><circle cx="1400" cy="135" r="2"/><circle cx="1515" cy="302" r="1.5"/><circle cx="1121" cy="280" r="1.5"/><circle cx="1474" cy="71" r="1.5"/><circle cx="925" cy="238" r="1.5"/></g>
+  <path d="M0 528c189-69 343-37 512-12 187 29 343-54 513-45 224 13 365 88 575 30v259H0V528Z" fill="#3A2D3A"/>
+  <path d="M0 604c201-52 329-30 507 8 200 43 370-57 571-24 204 33 345 83 522 31v141H0V604Z" fill="url(#ground)"/>
+  <path d="M0 671c185-23 349 23 524 21 197-2 322-47 489-26 220 28 397 27 587-16v110H0V671Z" fill="#362834"/>
+  <g opacity=".35" stroke="#F1B49A"><path d="m1030 566 34-29 28 5 32-23 37 7 26-20 33 1 34-24 38 10 24-20 46 6 35-22 39 14 39-13 44 17"/><path d="m1104 607 30-17 33 9 21-16 39 8 30-13 34 17 24-10 39 13 25-9 44 14 31-4 37 14"/></g>
+  <!-- Rover silhouette: intentionally conceptual, to be replaced with team photography or a render. -->
+  <g transform="translate(1000 370)">
+    <path d="m116 110 54-57 181 0 48 55-26 72H145l-29-70Z" fill="url(#rover)" stroke="#F6E8CB" stroke-width="3"/>
+    <path d="m180 61 22-39h103l35 39H180Z" fill="#B9C6C1" stroke="#EEE3CC" stroke-width="3"/>
+    <path d="M211 23V-40h58v63" stroke="#DED7C3" stroke-width="5"/><path d="m223-40 17-25 19 25" stroke="#DED7C3" stroke-width="5"/>
+    <path d="m145 102-54-38-22 8 48 64m272-23 53-47 21 9-44 68" stroke="#D5D2C2" stroke-width="9"/>
+    <path d="M139 155h267" stroke="#282A37" stroke-width="12"/>
+    <g fill="#272A35" stroke="#D2C9B5" stroke-width="6"><circle cx="158" cy="171" r="29"/><circle cx="225" cy="171" r="29"/><circle cx="349" cy="171" r="29"/><circle cx="411" cy="171" r="29"/></g>
+    <g stroke="#A7AA9E" stroke-width="3"><path d="M145 171h26m-13-13v26m54-13h26m-13-13v26m54-13h26m-13-13v26m54-13h26m-13-13v26m54-13h26m-13-13v26"/></g>
+    <path d="m173 92 20-16h16v23h-36m147-21 24 18h-38V77h14" fill="#E45A49"/>
+  </g>
+  <path d="M0 0h770v760H0z" fill="url(#sky)" opacity=".18"/>
+  <rect width="1600" height="760" fill="url(#sky)" opacity=".14"/>
+</svg>
