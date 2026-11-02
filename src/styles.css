@@ -805,3 +805,32 @@ h1 em,h2 em,.home-page h1 em{font-family:'Montserrat','Manrope',sans-serif;lette
 .sponsor-page .sponsor-benefits:after{right:0;top:0}
 .contact-page .contact-panel:after{right:0;bottom:0}
 .vehicle-page .vehicle-tech:after{right:0;bottom:0}
+
+
+/* Acentos y bordes con la paleta oficial; los fondos de cada sección se conservan. */
+:root{--coral:#e63318;--line:#302d3b}
+.section-tag,.eyebrow,.inline-link,.contact-email,.tech-list svg,.pillar-grid span,.ways-grid article>span,.contact-social>a>span,.home-page .value-cards article>span,.slot-cross{color:#e63318}
+.nav-cta,.button-orange,.home-page .button-orange{background-color:#e63318}
+.home-page .support-inner .eyebrow,.home-page .challenge-copy .eyebrow{color:#e63318}
+.home-page .value-cards article,.home-page .rover-card,.ways-grid article,.tier-grid article,.contact-panel,.update-card,.image-slot,.content-section,.contact-social>a{border-color:#393545}
+.home-page .value-cards article:hover,.home-page .rover-card:hover,.ways-grid article:hover,.tier-grid article:hover{border-color:#e63318}
+.home-page .button-text,.contact-panel a,.inline-link{transition:border-color .2s,color .2s}
+.home-page .button-text:hover{border-color:#e63318}
+.check-list li:before,.timeline-item.current:before,.stage.current:before{background:#e63318}
+
+/* Stickers ilustrados en marcos seleccionados, sobre la foto y sin capturar clics. */
+.image-slot img.frame-sticker{inset:auto 12px 10px auto;width:76px;height:76px;max-width:22%;object-fit:contain;padding:0;z-index:4;filter:drop-shadow(0 4px 5px #0008);pointer-events:none;transform:rotate(5deg)}
+.image-slot img.frame-sticker.sticker-rover{width:94px;height:72px;max-width:26%;transform:rotate(-4deg)}
+@media(max-width:680px){.image-slot img.frame-sticker{inset:auto 8px 8px auto;width:62px;height:62px}.image-slot img.frame-sticker.sticker-rover{width:78px;height:60px}}
+.team-page .team-portrait-grid .image-slot img.frame-sticker,.rovers-page .rover-card .card-art img.frame-sticker{inset:auto 12px 10px auto;width:76px;height:76px;max-width:24%;object-fit:contain;padding:0;z-index:4}
+.team-page .team-portrait-grid .image-slot img.frame-sticker.sticker-rover,.rovers-page .rover-card .card-art img.frame-sticker.sticker-rover{width:94px;height:72px;max-width:28%}
+
+/* El astronauta se apoya sobre el borde del marco y proyecta una sombra de volumen. */
+.image-slot.decorated-frame{overflow:visible}
+.image-slot.decorated-frame.card-art:after{clip-path:inset(0)}
+.image-slot img.frame-sticker.sticker-astronaut{inset:auto -15px -17px auto;width:92px;height:108px;max-width:none;object-fit:contain;padding:0;z-index:5;filter:drop-shadow(0 7px 6px #0009);transform:rotate(7deg);transform-origin:50% 70%;pointer-events:none}
+.team-page .team-portrait-grid .image-slot img.frame-sticker.sticker-astronaut{inset:auto -14px -15px auto;width:92px;height:108px;max-width:none;object-fit:contain;padding:0;z-index:5}
+@media(max-width:680px){.image-slot img.frame-sticker.sticker-astronaut,.team-page .team-portrait-grid .image-slot img.frame-sticker.sticker-astronaut{inset:auto -10px -12px auto;width:76px;height:90px}}
+.image-slot.decorated-frame.card-art:after{left:0;width:100%;bottom:0;height:40%}
+.image-slot img.frame-overlay{inset:0;width:100%;height:100%;max-width:none;object-fit:fill;padding:0;z-index:3;opacity:.3;pointer-events:none}
+.team-page .team-portrait-grid .image-slot img.frame-overlay{inset:0;width:100%;height:100%;max-width:none;object-fit:fill;padding:0;z-index:3;opacity:.3;pointer-events:none}

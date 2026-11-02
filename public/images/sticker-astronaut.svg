@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 170" fill="none">
+  <defs>
+    <linearGradient id="suit" x1="44" y1="55" x2="104" y2="143" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".55" stop-color="#e5e4eb"/><stop offset="1" stop-color="#aaa9b5"/></linearGradient>
+    <linearGradient id="visor" x1="50" y1="12" x2="91" y2="61" gradientUnits="userSpaceOnUse"><stop stop-color="#34304d"/><stop offset=".55" stop-color="#120f24"/><stop offset="1" stop-color="#05050b"/></linearGradient>
+    <linearGradient id="pack" x1="102" y1="56" x2="128" y2="101" gradientUnits="userSpaceOnUse"><stop stop-color="#f04a2f"/><stop offset="1" stop-color="#a82317"/></linearGradient>
+    <filter id="shadow" x="8" y="8" width="144" height="154" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <!-- Sombra independiente para dar profundidad cuando el sticker cruza el marco. -->
+  <g opacity=".3" filter="url(#shadow)" fill="#000"><path d="M55 22c3-14 16-21 30-17 15 4 23 20 20 34-2 10-8 17-16 21l13 5 13-10 13 14-12 18 4 20-17 9-2 21-19 6-18-10-16 8-14-14 8-23-11-15-16-4 4-18 16-5 10-14Z"/></g>
+  <!-- Antena, brazo saludando y mochila con contorno blanco de calcomanía. -->
+  <g stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m76 13 4-8m-4 8 9-5"/><path d="m101 62 15-15 7-20m-7 20 16 2"/><path d="m48 67-17 8-13-8"/>
+    <path d="m56 112-12 22-15 10m47-25 8 23 17 7"/>
+    <path d="M53 52 42 65l4 34 18 18 27-4 12-23-4-31-15-12"/>
+    <circle cx="72" cy="34" r="27"/>
+  </g>
+  <path d="m76 13 4-8m-4 8 9-5" stroke="#120f24" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="80" cy="6" r="4" fill="#e63318"/>
+  <path d="m101 62 15-15 7-20m-7 20 16 2" stroke="#e63318" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m48 67-17 8-13-8" stroke="#120f24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m56 112-12 22-15 10m47-25 8 23 17 7" stroke="#120f24" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m56 112-12 22-15 10m47-25 8 23 17 7" stroke="#e63318" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m101 62 15-15 7-20m-7 20 16 2" stroke="url(#suit)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 60 119 44l6-19 7 1-4 21 12 2-1 7-18-1-13 14" fill="url(#suit)" stroke="#120f24" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m48 67-17 8-13-8" stroke="url(#suit)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m23 67 8 6-1 8-10-3-4-7 2-7 5 3Z" fill="#e63318" stroke="#120f24" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m56 112-12 22-15 10m47-25 8 23 17 7" stroke="url(#suit)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m30 144 13-12 8 5-5 12-17 4-5-4 6-5Zm73 5-13-9 4-8 12 4 8 15-3 5-8-7Z" fill="#120f24" stroke="#f4f2f5" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m105 61 12-9 14 5-2 35 8 14-12 9-15-11-13 4-9-12 8-23 9-12Z" fill="url(#pack)" stroke="#120f24" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M53 52 42 65l4 34 18 18 27-4 12-23-4-31-15-12" fill="url(#suit)" stroke="#120f24" stroke-width="4" stroke-linejoin="round"/>
+  <path d="m52 68 13-8 20 1 11 10-4 18-13 11-19-2-11-14 3-16Z" fill="#120f24" stroke="#e63318" stroke-width="4" stroke-linejoin="round"/>
+  <path d="m61 76 9 7 13-8m-17 15 15 1" stroke="#f4f2f5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="72" cy="34" r="27" fill="url(#suit)" stroke="#120f24" stroke-width="4"/>
+  <path d="M51 33c0-11 8-19 20-19 11 0 19 8 19 19 0 10-7 18-19 18-12 0-20-8-20-18Z" fill="url(#visor)" stroke="#e63318" stroke-width="4"/>
+  <path d="M59 27c3-5 7-7 12-7" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+  <path d="M55 61 48 68m39-8 9 6" stroke="#e63318" stroke-width="4" stroke-linecap="round"/>
+  <path d="m121 69 8 7-6 8" stroke="#ffd98c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

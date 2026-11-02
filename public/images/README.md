@@ -7,6 +7,8 @@ Copiá en esta carpeta los logos, renders y fotografías aprobadas para la web. 
 - `hero-mars.svg`: paisaje marciano y rover conceptual del banner principal; se puede sustituir por un render del equipo.
 - El banner de Proyecto usa una ilustración conceptual de Mars 2020 alojada en NASA/JPL-Caltech, con crédito visible en el sitio. Si se incorpora una copia local optimizada, reemplazar su URL en `src/site/App.tsx`.
 - `orbit-diagram.svg`, `saturn-orbit.svg`, `community-orbit.svg`, `orbital-cluster.svg`, `lunar-orbits.svg`, `mission-constellation.svg`: ilustraciones vectoriales originales para fondos; se alternan con baja opacidad entre páginas y secciones.
+- `sticker-astronaut.svg` y `sticker-rover.svg`: stickers vectoriales originales para decorar algunos marcos de fotos.
+- `photo-frame-overlay.svg`: marco vectorial semitransparente superpuesto a los espacios decorados.
 
 ## Espacios reservados en la portada
 
